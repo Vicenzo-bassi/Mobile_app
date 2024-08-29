@@ -46,7 +46,7 @@ const LoginScreen: React.FC<Props> = ({ navigation }) => {
 
   return (
     <ImageBackground
-      source={require('../../assets/images/bg.png')}
+      source={require('../../assets/images/fundologin2.png')}
       style={styles.background}
     >
       <View style={styles.container}>
@@ -54,13 +54,13 @@ const LoginScreen: React.FC<Props> = ({ navigation }) => {
         {errorMessage && <Text style={styles.error}>{errorMessage}</Text>}
         <TextInput
           style={styles.input}
-          placeholder="Username"
+          placeholder="Insira seu usuário"
           value={username}
           onChangeText={setUsername}
         />
         <TextInput
           style={styles.input}
-          placeholder="Password"
+          placeholder="Insira sua senha"
           value={password}
           onChangeText={setPassword}
           secureTextEntry={true}
